@@ -1,0 +1,84 @@
+power
+280A000D
+Decoded NEC: 280A000D (32 bits)
+
+power again
+200A000D                         0010 1 
+Decoded NEC: 200A000D (32 bits)  state = bit 5
+
+Temp up 24c mode auto cool        temp = bits 13-16
+284B 000D                      
+
+temp 26  mode dry             mode = 9-10
+288B 000D
+
+temp 26 mode heat    mode 4 0100 8 1000 c 1100
+28CB 000D
+
+mode heat 25
+28CA 000D
+heat 21
+Decoded NEC: 28C6000D (32 bits)           1101
+heat 20
+Decoded NEC: 28C5000C (32 bits)           1100
+heat 18
+Decoded NEC: 28C3 000C (32 bits)
+fan high temp 18 cool
+Decoded NEC: 2853 74AC (32 bits)  fan 11-12   1100
+fan med temp 18 cool
+Decoded NEC: 2863 74AC (32 bits)
+temp 28 dry ?no fan
+Decoded NEC: 28A3 748C (32 bits)
+
+28097360
+temp 
+26  28CB 000D
+25	28CA 000D
+24	28F9 73A0  sweep 2AF9 7380 auto 28C9 7380  cool 2849 7360 fan 2809 7360
+23     8              
+22     7
+21	28C6 000D
+20     5
+19     4
+18	28C3 000C
+
+    0010 1000 0011 0011 - 0000 0000 0000 1100
+0	fixed  0
+1	fixed  0
+2   fixed  1
+3   fixed  0
+
+4   state  0/1 on off
+5
+6
+7
+
+8   mode
+9	mode 
+10  fan  
+11  fan
+
+12   temp
+13   temp
+14   temp
+15   temp   15  + code
+
+16
+17
+18
+19
+
+20
+21
+22
+23
+
+24
+25
+26
+27
+
+28   x
+29   x
+30   zero
+31   zero
